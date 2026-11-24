@@ -1,1041 +1,742 @@
-🧠 Strategic Copilot
-
-Causal Decision Intelligence & AI Executive Assistant
-
-<p align="center">
-
-<strong>From correlation → causation → simulation → strategic decision</strong>
-
-</p>
+# 🧠 Strategic Copilot
+### Causal Decision Intelligence Platform | From Correlation to Causation to Strategic Decisions
 
 <p align="center">
-
   <img src="assets/01_executive_overview.png" alt="Strategic Copilot Executive Dashboard" width="900"/>
-
 </p>
 
 <p align="center">
-
-  <em>
-
-A decision intelligence platform that combines causal inference, probabilistic simulation,
-
-and LLM-powered strategic analysis to evaluate business interventions before budget is committed.
-
-  </em>
-
+  <strong>From correlation → causal inference → decision simulation → strategic recommendations</strong>
 </p>
 
-🚀 Overview
+<p align="center">
+  An AI-assisted decision intelligence platform combining causal inference, Double Machine Learning, Monte Carlo simulation, and LLM-powered executive analysis to evaluate hypothetical business interventions.
+</p>
 
-Strategic Copilot is an end-to-end Causal Decision Intelligence platform designed to help SaaS decision-makers understand not only what happened, but also:
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?logo=python"/>
+  <img src="https://img.shields.io/badge/Streamlit-Interactive%20Dashboard-red?logo=streamlit"/>
+  <img src="https://img.shields.io/badge/DoWhy-Causal%20Inference-purple"/>
+  <img src="https://img.shields.io/badge/EconML-Double%20Machine%20Learning-blueviolet"/>
+  <img src="https://img.shields.io/badge/Simulation-Monte%20Carlo-green"/>
+  <img src="https://img.shields.io/badge/LLM-Llama%203.3%2070B-orange"/>
+</p>
 
-"What is likely to happen if we change something?"
+---
 
-Traditional business analytics often relies on observational correlations:
+# 1. Overview
 
-"Companies that spend more on advertising generate more revenue."
+**Strategic Copilot** is an end-to-end Causal Decision Intelligence platform designed to explore how hypothetical business interventions may influence financial performance and customer retention.
 
-But correlation does not necessarily imply causation.
+Traditional business intelligence systems primarily describe historical performance through KPIs, trends, and correlations.
 
-Strategic Copilot addresses this problem by combining:
+Predictive models estimate what might happen based on historical patterns.
 
-📊 Exploratory & observational analytics
+But business decision-makers often need to answer a different question:
 
-🔗 Structural causal modeling
+> What could happen if we change a business decision?
 
-🧠 DoWhy causal validation
+Consider a SaaS company evaluating whether to increase its monthly advertising budget by 20%.
 
-🤖 EconML Double Machine Learning
+A traditional analytics dashboard might show that companies spending more on advertising tend to generate more revenue.
 
-🎲 Monte Carlo decision simulation
+However, this relationship may be influenced by factors such as company size, customer engagement, and seasonality.
 
-📈 Probabilistic risk analysis
+Strategic Copilot attempts to go beyond this observational relationship by combining:
 
-💬 LLM-powered executive strategy generation
+- Exploratory and observational analytics
+- Explicit causal graph specification
+- DoWhy causal identification and refutation
+- EconML Double Machine Learning
+- Monte Carlo decision simulation
+- Probabilistic financial and churn risk analysis
+- LLM-powered executive recommendations
 
-⚡ Groq API + Llama 3.3 70B
+The platform connects these capabilities into a single analytical workflow:
 
-🖥️ Interactive Streamlit application
+**Data → Observation → Causal Estimation → Intervention → Simulation → Strategic Decision**
 
-The result is a workflow that moves from:
+# 2. The Problem It Addresses
 
-Data → Observation → Causal Effect → Intervention → Simulation → Business Decision
+Different analytical approaches answer different business questions.
 
-🎯 Why Strategic Copilot?
+| Analytical approach | Primary question |
+|---|---|
+| Descriptive Analytics | What happened? |
+| Diagnostic Analytics | Why did it happen? |
+| Predictive Analytics | What might happen? |
+| Causal Inference | What is the effect of an intervention? |
+| Decision Intelligence | Which decision should we evaluate, and what risks accompany it? |
 
-A typical analytics workflow answers:
+Strategic Copilot explores the connection between causal inference and decision intelligence.
 
-"What happened?"
+### Example business scenario
 
-A predictive ML system answers:
+A SaaS company wants to increase advertising expenditure.
 
-"What is likely to happen?"
+Instead of directly assuming that higher advertising spend will increase revenue, the platform follows this workflow:
 
-Strategic Copilot attempts to answer the more decision-oriented question:
+1. Explore historical advertising and revenue relationships.
+2. Identify potential confounders.
+3. Specify an assumed causal Directed Acyclic Graph (DAG).
+4. Estimate treatment effects using causal inference techniques.
+5. Compare naive observational estimates with adjusted estimates.
+6. Simulate hypothetical interventions.
+7. Evaluate expected financial impact and uncertainty.
+8. Generate an executive-oriented decision memo using an LLM.
 
-"What could happen if we intervene?"
+The objective is to make the assumptions, analytical evidence, and potential risks more visible before evaluating a business decision.
 
-For example:
+# 3. System Architecture
 
-Business Question
+```mermaid
+flowchart TD
+    A["Synthetic SaaS Account Data"] --> B["Exploratory Business Analytics"]
 
-What happens if monthly advertising spend increases by 20%?
+    B --> C["Explicit Causal DAG"]
 
-Instead of simply observing historical relationships, Strategic Copilot:
+    C --> D["DoWhy: Causal Identification"]
 
-Identifies potential confounders.
+    D --> E["EconML: Double Machine Learning"]
 
-Defines a causal graph.
+    E --> F["Treatment Effect Estimates"]
 
-Estimates the treatment effect.
+    F --> G["Business Policy Intervention"]
 
-Removes observable confounding using Double Machine Learning.
+    G --> H["Monte Carlo Simulation"]
 
-Simulates thousands of possible outcomes.
+    H --> I["Financial Impact and Churn Risk"]
 
-Estimates financial impact and churn risk.
+    I --> J["Groq API / Llama 3.3 70B"]
 
-Converts the results into an executive-friendly strategic recommendation.
-
-⭐ Key Capabilities
-
-Capability
-
-Description
-
-📊 Exploratory Analytics
-
-Analyze SaaS revenue, MRR, churn, advertising spend and customer segments
-
-🔗 Causal Modeling
-
-Build explicit causal relationships using DAGs
-
-🧠 Double Machine Learning
-
-Estimate treatment effects while controlling for observed confounders
-
-🧪 Causal Validation
-
-Apply DoWhy identification and refutation techniques
-
-🎲 Monte Carlo Simulation
-
-Run 5,000 simulations to model uncertainty
-
-📈 Risk Analysis
-
-Examine expected, conservative and optimistic outcomes
-
-💬 AI Strategy Consultant
-
-Generate executive-level strategy memos using Llama 3.3 70B
-
-🎛️ Interactive Decisions
-
-Change pricing, advertising spend and simulation parameters
-
-🖥️ Streamlit UI
-
-Explore the entire decision workflow through an interactive dashboard
-
-🏗️ System Architecture
-
-
-                         ┌──────────────────────┐
-
-                         │   SaaS Customer Data │
-
-                         └──────────┬───────────┘
-
-                                    │
-
-                                    ▼
-
-                    ┌─────────────────────────────┐
-
-                    │ Exploratory Data Analysis   │
-
-                    │                             │
-
-                    │ MRR • Churn • Ad Spend     │
-
-                    │ Customer Segments • Trends  │
-
-                    └──────────────┬──────────────┘
-
-                                   │
-
-                                   ▼
-
-                    ┌─────────────────────────────┐
-
-                    │      Causal Discovery       │
-
-                    │                             │
-
-                    │ DAGs • Confounders • SCMs  │
-
-                    └──────────────┬──────────────┘
-
-                                   │
-
-                                   ▼
-
-              ┌────────────────────────────────────────┐
-
-              │       Causal Effect Estimation         │
-
-              │                                        │
-
-              │       DoWhy + EconML DML               │
-
-              │                                        │
-
-              │     Naive OLS → Causal Adjustment      │
-
-              └────────────────────┬───────────────────┘
-
-                                   │
-
-                                   ▼
-
-                    ┌─────────────────────────────┐
-
-                    │   Policy Intervention       │
-
-                    │                             │
-
-                    │ Ad Spend ↑ / ↓              │
-
-                    │ Price ↑ / ↓                  │
-
-                    └──────────────┬──────────────┘
-
-                                   │
-
-                                   ▼
-
-                    ┌─────────────────────────────┐
-
-                    │   Monte Carlo Simulation    │
-
-                    │                             │
-
-                    │       5,000 simulations     │
-
-                    └──────────────┬──────────────┘
-
-                                   │
-
-                    ┌──────────────┴──────────────┐
-
-                    ▼                             ▼
-
-          ┌──────────────────┐          ┌──────────────────┐
-
-          │ Financial Impact │          │   Churn Risk     │
-
-          │      ($)         │          │       (%)        │
-
-          └────────┬─────────┘          └────────┬─────────┘
-
-                   │                             │
-
-                   └──────────────┬──────────────┘
-
-                                  ▼
-
-                    ┌─────────────────────────────┐
-
-                    │     AI Strategy Consultant  │
-
-                    │                             │
-
-                    │ Groq API + Llama 3.3 70B   │
-
-                    └──────────────┬──────────────┘
-
-                                   │
-
-                                   ▼
-
-                    ┌─────────────────────────────┐
-
-                    │ Executive Decision Memo     │
-
-                    │ & Strategic Interpretation   │
-
-                    └─────────────────────────────┘
-
-
-
-📸 Product Tour
-
-1️⃣ Executive Overview & Exploratory Analysis
-
-The first stage establishes the observational baseline before any causal adjustment.
+    J --> K["Executive Decision Memo"]
+```
+
+The application consists of four connected analytical layers:
+
+1. Business Analytics
+2. Causal Inference
+3. Decision Simulation
+4. AI Strategy Consultant
+
+# 4. Key Capabilities
+
+| Module | Functionality |
+|---|---|
+| Exploratory Analytics | SaaS revenue, MRR, churn, advertising spend, and customer segments |
+| Causal Modeling | Explicit DAG specification and observed confounder adjustment |
+| Causal Estimation | DoWhy identification and EconML Double Machine Learning |
+| Causal Diagnostics | Confidence intervals, ground-truth comparisons, and placebo refutation |
+| Decision Simulation | Interactive pricing and advertising interventions |
+| Monte Carlo Analysis | Distribution of possible financial and churn outcomes |
+| Risk Analysis | Expected, downside, and upside scenarios |
+| AI Strategy Consultant | LLM-generated executive recommendations and decision memos |
+| Interactive Interface | Streamlit dashboard with analytical and simulation controls |
+
+# 5. Product Walkthrough
+
+## 5.1 Executive Overview & Exploratory Analytics
+
+The first stage establishes the observational baseline before performing causal analysis.
 
 It provides:
 
-Total customer accounts
+- Total customer accounts
+- Average Monthly Recurring Revenue (MRR)
+- Monthly churn rate
+- Average subscription list price
+- Historical MRR trends
+- Historical churn trends
+- Interactive variable exploration
+- Observational relationships
+- Correlation analysis
 
-Mean Monthly Recurring Revenue
+### Executive KPI Dashboard
 
-Churn rate
+<p align="center">
+  <img src="assets/01_executive_overview.png" alt="Strategic Copilot Executive Overview" width="900"/>
+</p>
 
-List pricing
+### MRR & Churn Trends
 
-Historical MRR trends
+<p align="center">
+  <img src="assets/02_mrr_churn_trends.png" alt="MRR and Churn Trends" width="900"/>
+</p>
 
-Historical churn trends
+Historical trends establish the business baseline and provide visibility into changes in revenue and customer retention.
 
-Interactive variable exploration
+### Interactive Data Explorer
 
-Raw treatment-outcome relationships
+<p align="center">
+  <img src="assets/03_data_explorer_controls.png" alt="Interactive Data Explorer" width="900"/>
+</p>
 
-Correlation analysis
+Users can dynamically explore selected variables and investigate relationships across the customer portfolio.
 
-Executive KPI Dashboard
+### Observational Relationships
 
-<p align="center"> <img src="assets/01_executive_overview.png" alt="Executive Overview" width="900"/> </p>
+<p align="center">
+  <img src="assets/04_naive_scatter.png" alt="Advertising Spend and MRR Scatter Plot" width="900"/>
+</p>
 
-MRR & Churn Trends
+The scatter plot illustrates the initial observational relationship between advertising expenditure and MRR.
 
-<p align="center"> <img src="assets/02_mrr_churn_trends.png" alt="MRR and Churn Trends" width="900"/> </p>
+However, an observed relationship does not automatically establish a causal effect.
 
-Historical 12-month trends provide visibility into baseline seasonality and business performance.
+### Correlation & Potential Confounding
 
-Interactive Data Explorer
+<p align="center">
+  <img src="assets/05_correlation_heatmap.png" alt="Correlation Heatmap" width="900"/>
+</p>
 
-<p align="center"> <img src="assets/03_data_explorer_controls.png" alt="Data Explorer Controls" width="900"/> </p>
+The correlation matrix helps investigate relationships between business variables.
 
-Users can dynamically select variables and explore relationships across the customer portfolio.
+For example, company size may influence both advertising expenditure and revenue, potentially introducing confounding bias into a naive regression.
 
-Observational Relationship
+This motivates the causal inference stage.
 
-<p align="center"> <img src="assets/04_naive_scatter.png" alt="Naive Scatter Plot" width="900"/> </p>
+## 5.2 Causal Inference & Effect Estimation
 
-The raw relationship between advertising spend and MRR provides the initial observational hypothesis.
+The second stage moves from observational relationships to explicitly modeled causal relationships.
 
-However:
+Strategic Copilot specifies relationships between:
 
-An observational relationship is not necessarily a causal relationship.
+- Treatment variables
+- Outcome variables
+- Observed confounders
+- Potential intervention pathways
 
-Correlation & Confounding
+### Directed Acyclic Graph
 
-<p align="center"> <img src="assets/05_correlation_heatmap.png" alt="Correlation Heatmap" width="900"/> </p>
+<p align="center">
+  <img src="assets/06_causal_dag.png" alt="Strategic Copilot Causal DAG" width="900"/>
+</p>
 
-The correlation matrix helps identify potential confounders.
+The DAG represents the assumed causal structure of the business problem.
 
-For example, company size may influence both:
+Making these assumptions explicit helps identify which observed variables should be considered when estimating treatment effects.
 
-Advertising spend
+**Important:** The graph is specified using assumed causal relationships. It is not automatically discovered from the data.
 
-Revenue / MRR
+### Naive vs. Causal Effect Comparison
 
-This creates the possibility of confounding bias in a naive regression.
+<p align="center">
+  <img src="assets/07_effect_comparison_barchart.png" alt="Naive and Causal Effect Comparison" width="900"/>
+</p>
 
-2️⃣ Causal Discovery & Estimation
+The application compares three estimation approaches:
 
-The second stage moves from correlation to causal inference.
+**1. Naive Observational Regression**
 
-Strategic Copilot explicitly defines relationships between:
+Provides a baseline estimate without the specified causal adjustment.
 
-Treatment variables
+**2. DoWhy**
 
-Outcomes
+Uses the specified causal graph to identify and estimate effects through the backdoor adjustment approach.
 
-Confounders
+**3. EconML Double Machine Learning**
 
-Potential intervention paths
+Uses residualization and machine learning nuisance models to estimate treatment effects while adjusting for observed confounders.
 
-Directed Acyclic Graph
+This comparison helps investigate how estimates change after accounting for observed confounding.
 
-<p align="center"> <img src="assets/06_causal_dag.png" alt="Causal DAG" width="900"/> </p>
+### Causal Diagnostics
 
-The DAG provides an explicit representation of the assumed causal structure.
-
-This makes the causal assumptions visible instead of hiding them inside a black-box model.
-
-Naive vs Causal Estimates
-
-<p align="center"> <img src="assets/07_effect_comparison_barchart.png" alt="Causal Effect Comparison" width="900"/> </p>
-
-Strategic Copilot compares:
-
-Naive OLS
-
-↓
-
-Observational Estimate
-
-DoWhy
-
-↓
-
-Causal Identification + Validation
-
-EconML DML
-
-↓
-
-Confounder-Adjusted Treatment Effect
-
-This allows the user to see how the estimated effect changes after causal adjustment.
-
-Causal Diagnostics
-
-<p align="center"> <img src="assets/08_causal_diagnostics_table.png" alt="Causal Diagnostics" width="900"/> </p>
+<p align="center">
+  <img src="assets/08_causal_diagnostics_table.png" alt="Causal Diagnostics and Validation" width="900"/>
+</p>
 
 The diagnostics layer reports:
 
-Treatment effect estimates
+- Estimated treatment effects
+- Confidence intervals
+- Synthetic ground-truth comparisons
+- Placebo treatment refutation results
 
-Confidence intervals
+The synthetic ground truth provides a benchmark for evaluating whether the estimation procedure recovers the effects used to generate the dataset.
 
-Synthetic ground-truth benchmarks
+Placebo refutation provides an additional diagnostic, rather than definitive proof of causal validity.
 
-Refutation tests
+### Treatment and Outcome Relationships
 
-Placebo sensitivity checks
+The application investigates the following relationships:
 
-This provides an additional layer of validation around the estimated causal relationship.
+| Treatment | Outcome |
+|---|---|
+| Advertising Spend | MRR |
+| Subscription Price Tier | MRR |
+| Subscription Price Tier | Customer Churn |
+| Support Tickets per User | Customer Churn |
 
-3️⃣ Decision Intelligence & Monte Carlo Simulation
+## 5.3 Decision Intelligence & Monte Carlo Simulation
 
-Once the causal effect has been estimated, Strategic Copilot converts it into a decision simulation problem.
+After estimating treatment effects, the platform converts the analysis into a hypothetical business intervention.
 
 Instead of asking:
 
 "What was the historical relationship?"
 
-the system asks:
+The application explores:
 
-"What could happen if we change the policy?"
+"What could happen if we change the business policy?"
 
-Policy Intervention Controls
+### Policy Intervention Controls
 
-<p align="center"> <img src="assets/09_decision_simulator_controls.png" alt="Decision Simulator Controls" width="900"/> </p>
+<p align="center">
+  <img src="assets/09_decision_simulator_controls.png" alt="Interactive Decision Simulator" width="900"/>
+</p>
 
-Users can interactively modify:
+Users can modify:
 
-Monthly advertising spend
+- Monthly advertising expenditure
+- Subscription pricing
+- Simulation draw count
+- Intervention parameters
 
-Pricing changes
+The simulation supports different draw counts, including 1,000, 5,000, and 20,000.
 
-Simulation draw count
+### Monte Carlo Outcome Distributions
 
-Intervention parameters
+<p align="center">
+  <img src="assets/10_monte_carlo_distributions.png" alt="Monte Carlo Simulation Outcome Distributions" width="900"/>
+</p>
 
-Monte Carlo Outcome Distributions
+Instead of producing a single deterministic output, the simulator generates distributions of possible outcomes under the selected assumptions.
 
-<p align="center"> <img src="assets/10_monte_carlo_distributions.png" alt="Monte Carlo Distributions" width="900"/> </p>
+Two major areas of analysis are:
 
-Rather than producing a single deterministic prediction, the system generates a distribution of possible outcomes.
+**Financial Impact**
 
-Two key outputs are simulated:
+- Expected MRR
+- Retained MRR
+- Change in retained MRR
+- Net monthly financial impact after advertising costs
+- Probability of positive net impact
 
-💰 Net Monthly Financial Impact
+**Customer Retention**
 
-The distribution estimates the range of potential financial impact under the selected intervention.
+- Projected monthly churn
+- Churn outcome distribution
+- Potential downside and upside scenarios
 
-📉 Projected Monthly Churn
+The simulation incorporates uncertainty in estimated treatment effects and binomial variation in churn outcomes.
 
-The simulation also estimates the distribution of potential churn outcomes.
+### Risk & Percentile Analysis
 
-This enables decision-makers to reason about:
+<p align="center">
+  <img src="assets/11_simulation_percentiles_table.png" alt="Simulation Percentile Analysis" width="900"/>
+</p>
 
-Expected outcome + uncertainty + downside risk + upside potential
+The simulator summarizes outcomes using:
 
-Risk & Percentile Analysis
+| Measure | Interpretation |
+|---|---|
+| Mean | Average simulated outcome |
+| 5th Percentile | Lower-tail outcome |
+| 95th Percentile | Upper-tail outcome |
 
-<p align="center"> <img src="assets/11_simulation_percentiles_table.png" alt="Simulation Percentiles" width="900"/> </p>
+This allows decision-makers to examine expected outcomes alongside uncertainty and potential downside risk.
 
-The simulator summarizes:
+## 5.4 AI Strategy Consultant
 
-Metric    Interpretation
+The final layer converts quantitative analytical outputs into an executive-friendly narrative.
 
-Mean Expected simulated outcome
+<p align="center">
+  <img src="assets/12_ai_consultant_interface.png" alt="AI Strategy Consultant Interface" width="900"/>
+</p>
 
-5th Percentile Conservative downside scenario
+### Technology
 
-95th Percentile     Optimistic upside scenario
+**Groq API + Llama 3.3 70B**
 
-This is particularly useful for evaluating decisions under uncertainty rather than relying on a single point estimate.
+The AI Strategy Consultant receives analytical information such as:
 
-4️⃣ 🤖 AI Strategy Consultant
+- Selected business intervention
+- Baseline business metrics
+- Estimated causal effects
+- Confidence intervals
+- Monte Carlo simulation summaries
+- Financial impact distributions
+- Probability of positive net impact
 
-The final layer converts quantitative analysis into an executive-friendly narrative.
+It generates a structured executive memo covering:
 
-<p align="center"> <img src="assets/12_ai_consultant_interface.png" alt="AI Strategy Consultant" width="900"/> </p>
+- Strategic recommendation
+- Expected financial impact
+- Potential business risks
+- Uncertainty and assumptions
+- Strategic implications
+- Recommended next steps
 
-The AI Strategy Consultant integrates:
+### Separation of Analytical Computation and AI Reasoning
 
-Causal Estimate
+One important design decision was to separate numerical computation from LLM-generated recommendations.
 
-   +
+The quantitative engine produces the causal estimates and simulation results.
 
-Simulation Results
+The LLM interprets those outputs and communicates them in business-oriented language.
 
-   +
+This avoids treating the LLM as the source of numerical or causal truth.
 
-Risk Distribution
+An offline template-based memo fallback is also available when live API access is unavailable.
 
-   ↓
+# 6. Dataset & Experimental Design
 
-LLM Strategy Agent
+The project uses a programmatically generated synthetic SaaS dataset.
 
-   ↓
+The data generator creates customer-account observations over a 12-month period using predefined relationships between business variables.
 
-Executive Decision Memo
+| Dataset Property | Value |
+|---|---|
+| Customer Accounts | 5,000 |
+| Observation Period | 12 months |
+| Total Observations | 60,000 account-month records |
+| Data Type | Synthetic panel data |
+| Random Seed | 42 |
+| Generated Dataset | `saas_historical_data.csv` |
 
-The system uses:
+### Why Synthetic Data?
 
-Groq API + Llama 3.3 70B
+The synthetic data generator defines the underlying structural relationships and treatment effects.
 
-to transform quantitative simulation outputs into a structured strategic narrative.
+This provides a known ground-truth benchmark for evaluating the causal estimation workflow.
 
-The objective is not to let the LLM calculate the causal effect.
+It helps investigate:
 
-Instead:
+- How naive estimates differ from adjusted estimates
+- Whether estimated effects recover the underlying data-generating relationships
+- How observed confounding affects estimates
+- Whether placebo refutation produces approximately null effects
 
-The analytical engine produces the evidence.
+The causal estimation module uses a sample of up to 12,000 observations for model estimation.
 
-The LLM translates the evidence into executive language.
+**Dataset disclaimer:** The dataset is synthetic and does not represent real customers, company records, or actual business performance.
 
-This separation keeps quantitative estimation and narrative generation conceptually distinct.
+# 7. Mathematical Framework
 
-📐 Mathematical Framework
+## 7.1 Double Machine Learning
 
-Double Machine Learning
+Traditional regression can suffer from omitted-variable bias when observed confounders influence both the treatment and outcome.
 
-Traditional regression can suffer from omitted-variable bias when a confounder (X) influences both the treatment (T) and outcome (Y).
-
-Strategic Copilot uses the residualization framework behind Double Machine Learning:
-
-$$ Y - \mathbb{E}[Y|X] = \theta \left( T - \mathbb{E}[T|X] \right) + \epsilon $$
-
-Where:
-
-(Y) = outcome variable
-
-(T) = treatment/intervention
-
-(X) = observed confounders
-
-(\theta) = estimated treatment effect
-
-(\epsilon) = residual error
-
-The machine learning models estimate:
-
-$$ \mathbb{E}[Y|X] $$
-
-and
-
-$$ \mathbb{E}[T|X] $$
-
-The residualized treatment and outcome are then used to estimate the treatment effect while controlling for observed confounding.
-
-Monte Carlo Decision Simulation
-
-Strategic Copilot uses 5,000 simulation draws to model uncertainty around policy outcomes.
-
-The simulation incorporates uncertainty in the estimated treatment effect together with outcome variability.
+Strategic Copilot uses the residualization framework behind Double Machine Learning.
 
 Conceptually:
 
-$$ Y^{(i)}{sim} \sim Distribution \left( \hat{\theta}, \sigma{\hat{\theta}}, p_{churn}, N_{accounts} \right) $$
+\[
+Y-\mathbb{E}[Y|X]
+=
+\theta(T-\mathbb{E}[T|X])+\epsilon
+\]
 
-The resulting distribution is used to calculate:
+Where:
 
-Expected financial impact
+- \(Y\) = Outcome variable
+- \(T\) = Treatment variable
+- \(X\) = Observed confounders
+- \(\theta\) = Estimated treatment effect
+- \(\epsilon\) = Residual error
 
-Downside scenarios
+The nuisance models estimate:
 
-Upside scenarios
+\[
+\mathbb{E}[Y|X]
+\]
 
-Churn distributions
+and
 
-Percentile-based risk boundaries
+\[
+\mathbb{E}[T|X]
+\]
 
-This allows the system to move from:
+The residualized treatment and outcome are then used to estimate the treatment effect.
 
-Single Forecast
+The implementation combines DoWhy with EconML LinearDML and machine learning nuisance models.
 
-  ↓
+## 7.2 Monte Carlo Decision Simulation
 
-Probability Distribution
+The simulator evaluates hypothetical interventions by generating repeated draws from modeled uncertainty.
 
-  ↓
+Conceptually:
 
-Risk-Aware Decision
+\[
+\theta^{(i)} \sim
+\mathcal{N}(\hat{\theta},SE(\hat{\theta})^2)
+\]
 
-🧪 Causal Inference Workflow
+The simulated intervention outcomes are then used to construct distributions of financial impact and churn.
 
+The results are summarized through:
 
-Strategic Copilot follows the following analytical pipeline:
+- Expected financial impact
+- Downside scenarios
+- Upside scenarios
+- Churn distributions
+- Percentile-based risk boundaries
 
-Raw SaaS Data
+The simulation represents conditional scenario analysis rather than a guaranteed real-world forecast.
 
-     │
+# 8. Technical Implementation
 
-     ▼
+| Component | Implementation |
+|---|---|
+| Data Generation | Programmatic synthetic SaaS data |
+| Exploratory Analysis | Pandas, NumPy and Plotly |
+| Causal Graph | Explicitly specified DAG |
+| Causal Identification | DoWhy |
+| Causal Estimation | DoWhy backdoor estimation |
+| Treatment Effect Estimation | EconML LinearDML |
+| Nuisance Models | Scikit-learn Gradient Boosting |
+| Refutation | DoWhy placebo treatment refutation |
+| Decision Simulation | Monte Carlo sampling |
+| Financial Analysis | MRR and retained revenue calculations |
+| AI Integration | Groq API |
+| Language Model | Llama 3.3 70B |
+| User Interface | Streamlit |
 
-Exploratory Analysis
+# 9. Repository Structure
 
-     │
-
-     ▼
-
-Identify Potential Confounders
-
-     │
-
-     ▼
-
-Define Causal DAG
-
-     │
-
-     ▼
-
-Causal Identification
-
-     │
-
-     ▼
-
-DoWhy Estimation & Validation
-
-     │
-
-     ▼
-
-EconML Double Machine Learning
-
-     │
-
-     ▼
-
-Treatment Effect
-
-     │
-
-     ▼
-
-Policy Intervention
-
-     │
-
-     ▼
-
-5,000 Monte Carlo Simulations
-
-     │
-
-     ▼
-
-Risk Distribution
-
-     │
-
-     ▼
-
-AI Strategy Consultant
-
-     │
-
-     ▼
-
-Executive Decision Memo
-
-
-🛠️ Technology Stack
-
-Frontend & Dashboard
-
-Streamlit
-
-Plotly
-
-Graphviz
-
-Causal Inference
-
-DoWhy
-
-EconML
-
-Double Machine Learning
-
-Structural Causal Models
-
-Machine Learning
-
-Scikit-Learn
-
-LightGBM
-
-Statsmodels
-
-Data Processing
-
-Pandas
-
-NumPy
-
-Simulation
-
-Monte Carlo Simulation
-
-Probability Distributions
-
-Percentile / Risk Analysis
-
-LLM Integration
-
-Groq API
-
-Llama 3.3 70B
-
-Development
-
-Python 3.10+
-
-Git
-
-Virtual Environments
-
-📂 Repository Structure
-
-
+```text
 strategic-copilot/
-
 │
-
 ├── assets/
-
 │   ├── 01_executive_overview.png
-
 │   ├── 02_mrr_churn_trends.png
-
 │   ├── 03_data_explorer_controls.png
-
 │   ├── 04_naive_scatter.png
-
 │   ├── 05_correlation_heatmap.png
-
 │   ├── 06_causal_dag.png
-
 │   ├── 07_effect_comparison_barchart.png
-
 │   ├── 08_causal_diagnostics_table.png
-
 │   ├── 09_decision_simulator_controls.png
-
 │   ├── 10_monte_carlo_distributions.png
-
 │   ├── 11_simulation_percentiles_table.png
-
 │   └── 12_ai_consultant_interface.png
-
 │
-
 ├── data/
-
-│   └── saas_customer_data.csv
-
+│   └── saas_historical_data.csv
 │
-
 ├── src/
-
-│   ├── causal_engine.py
-
-│   ├── simulation.py
-
-│   └── llm_agent.py
-
+│   ├── causal_model.py
+│   ├── data_generator.py
+│   └── simulator.py
 │
-
+├── .env.example
+├── .gitignore
 ├── app.py
-
 ├── requirements.txt
-
 └── README.md
+```
 
+The synthetic dataset is generated automatically when required by the application.
 
-⚡ Quick Start
+# 10. Installation & Quick Start
 
-Prerequisites
+### Prerequisites
 
-Python 3.10+
+- Python 3.10+
+- Git
+- Groq API key (optional, required for live LLM-generated memos)
 
-Git
+### Step 1: Clone the Repository
 
-A Groq API key for the AI Strategy Consultant (optional)
-
-1. Clone the Repository
-
+```bash
 git clone https://github.com/Git-Saurav-Khyalia/strategic-copilot.git
+
 cd strategic-copilot
+```
 
-2. Create a Virtual Environment
+### Step 2: Create a Virtual Environment
 
-Windows — PowerShell
+**Windows — PowerShell**
 
+```powershell
 python -m venv venv
+
 .\venv\Scripts\Activate.ps1
+```
 
-Windows — Command Prompt
+**Windows — Command Prompt**
 
+```cmd
 python -m venv venv
+
 venv\Scripts\activate.bat
+```
 
-macOS / Linux
+**macOS / Linux**
 
+```bash
 python3 -m venv venv
+
 source venv/bin/activate
+```
 
-3. Install Dependencies
+### Step 3: Install Dependencies
 
+```bash
 python -m pip install --upgrade pip
+
 pip install -r requirements.txt
+```
 
-4. Launch the Application
+### Step 4: Launch the Application
 
+```bash
 streamlit run app.py
+```
 
 The application will open in your browser.
 
-🔐 AI Strategy Consultant Configuration
+On the first run, the application generates the synthetic dataset if it is not already available and executes the required analytical workflow.
 
-The AI Strategy Consultant requires a Groq API key.
+# 11. AI Strategy Consultant Configuration
 
-You can provide the key through the application interface or configure it using an environment variable.
+The AI Strategy Consultant supports Groq-hosted Llama models.
+
+You can provide your API key through the application interface or configure it through environment variables.
+
+Create a `.env` file in the project root using `.env.example` as a reference.
 
 Example:
 
-GROQ_API_KEY="your_groq_api_key_here"
+```env
+GROQ_API_KEY=your_groq_api_key_here
+GROQ_MODEL=llama-3.3-70b-versatile
+```
 
-⚠️ Never commit your API key to GitHub.
+Never commit API keys, credentials, or other secrets to GitHub.
 
-If using a .env file, add it to .gitignore.
+If live API access is unavailable, the application can use its offline memo fallback.
 
-📊 Example Decision Workflow
+# 12. Example Business Decision Workflow
 
-Imagine a SaaS company is considering increasing advertising expenditure.
+Imagine a SaaS company considering an increase in advertising expenditure.
 
-Step 1 — Observe
+### Step 1 — Observe
 
-Historical data shows:
+Historical data shows a positive relationship between advertising spend and MRR.
 
-Ad Spend ↑
+However, this relationship may also be influenced by company size.
 
- ↓
+### Step 2 — Specify the Causal Structure
 
-MRR ↑
+A DAG represents the assumed relationships between company size, advertising expenditure, and revenue.
 
-But this relationship may be influenced by:
+### Step 3 — Estimate the Treatment Effect
 
-Company Size
+DoWhy and EconML are used to estimate the treatment effect while adjusting for specified observed confounders.
 
- ↓
+### Step 4 — Simulate the Intervention
 
-┌───┴────┐
+The decision-maker changes advertising expenditure and evaluates thousands of simulated outcomes.
 
-▼        ▼
+### Step 5 — Evaluate Risk
 
-Ad Spend  MRR
+The platform presents distributions of potential financial outcomes instead of relying on one deterministic estimate.
 
-Step 2 — Model the Causal Structure
+### Step 6 — Generate an Executive Recommendation
 
-A DAG is constructed to explicitly represent the assumed relationships.
+The AI Strategy Consultant converts the quantitative results into a structured memo describing:
 
-Step 3 — Estimate the Causal Effect
+- Expected impact
+- Potential downside
+- Uncertainty
+- Key assumptions
+- Strategic implications
+- Recommended next steps
 
-DoWhy and EconML are used to estimate the treatment effect while accounting for observed confounding.
+# 13. What Makes Strategic Copilot Different?
 
-Step 4 — Simulate the Intervention
+The main idea is not simply combining a dashboard with an LLM.
 
-The decision-maker can increase advertising spend and run thousands of simulations.
+It is connecting different analytical approaches into one decision-support workflow.
 
-Step 5 — Evaluate Risk
+| Layer | Contribution |
+|---|---|
+| Business Intelligence | Understand historical business performance |
+| Causal Inference | Estimate intervention effects under stated assumptions |
+| Decision Simulation | Evaluate potential outcomes and uncertainty |
+| Generative AI | Communicate analytical findings as executive recommendations |
 
-Instead of:
+The project explores how business analytics, statistical reasoning, causal inference and Generative AI can work together.
 
-"Revenue will increase by $X."
+# 14. Assumptions & Limitations
 
-the system produces a distribution such as:
+Strategic Copilot is an analytical prototype built using synthetic data.
 
-Expected Impact
+Its results depend on the assumptions used to construct the dataset and analytical models.
 
-   │
+### Causal Inference Limitations
 
-   ├── Conservative Scenario
+- The causal DAG is manually specified using assumed relationships.
+- Causal identification depends on the correctness of the specified graph.
+- Double Machine Learning adjusts for specified observed confounders but cannot automatically eliminate unobserved confounding.
+- Placebo refutation is a diagnostic, not proof of causal validity.
+- Synthetic ground-truth comparisons do not establish real-world validity.
 
-   │
+### Simulation Limitations
 
-   ├── Expected Scenario
+- Simulation outcomes are conditional on estimated treatment effects and model assumptions.
+- The simulator propagates modeled uncertainty rather than all possible sources of business uncertainty.
+- Effects are assumed linear within the model's specified intervention framework.
+- Large interventions may involve extrapolation beyond the observed data.
+- Simulated financial outcomes should not be interpreted as guaranteed forecasts.
 
-   │
+### AI Limitations
 
-   └── Optimistic Scenario
+- Generated recommendations depend on the quality and completeness of quantitative inputs.
+- LLM-generated narratives may contain interpretation errors.
+- Recommendations should be reviewed before being used in actual business decisions.
+- The LLM does not independently establish causal relationships or calculate the underlying treatment effects.
 
-Step 6 — Generate an Executive Narrative
-
-The AI Strategy Consultant converts the quantitative results into a concise strategic memo describing:
-
-Expected impact
-
-Risk
-
-Uncertainty
-
-Key assumptions
-
-Strategic implications
-
-🧠 What Makes This Different?
-
-Strategic Copilot combines several analytical layers into one workflow:
-
-            ┌─────────────────┐
-
-            │   BI Analytics  │
-
-            └────────┬────────┘
-
-                     │
-
-                     ▼
-
-            ┌─────────────────┐
-
-            │ Causal Inference│
-
-            └────────┬────────┘
-
-                     │
-
-                     ▼
-
-            ┌─────────────────┐
-
-            │ Decision Sim.   │
-
-            └────────┬────────┘
-
-                     │
-
-                     ▼
-
-            ┌─────────────────┐
-
-            │ AI Consultant   │
-
-            └─────────────────┘
-
-Rather than treating analytics, causal inference, simulation and generative AI as separate tools, Strategic Copilot connects them into a single decision workflow.
-
-⚠️ Important Assumptions & Limitations
-
-Causal inference does not automatically establish real-world causality.
-
-The quality of the estimated effect depends on:
-
-Correct specification of the causal graph
-
-Availability of relevant confounders
-
-Quality of the underlying data
-
-Validity of modeling assumptions
-
-Treatment variation
-
-Correct interpretation of the intervention
-
-In particular, Double Machine Learning can reduce bias from observed confounders, but it cannot automatically eliminate bias from important unobserved confounders.
-
-The Monte Carlo simulator also produces scenario distributions based on the assumptions supplied to the model. These should therefore be interpreted as decision-support scenarios, not guaranteed forecasts.
-
-🔮 Future Improvements
+# 15. Future Improvements
 
 Potential extensions include:
 
-Automated causal graph discovery
+- Treatment effect heterogeneity across customer segments
+- Conditional Average Treatment Effect (CATE) estimation
+- Sensitivity analysis for unobserved confounding
+- Automated experiment and A/B test design
+- Bayesian decision modeling
+- Multi-treatment optimization
+- Automated scenario comparison
+- Decision history tracking
+- SQL and data warehouse integration
+- Real-time SaaS metrics integration
+- Executive PDF report generation
+- Authentication and role-based access
+- Cloud deployment
 
-Treatment effect heterogeneity by customer segment
+# 16. Project Highlights
 
-CATE estimation
+- End-to-end Causal Decision Intelligence workflow
+- Interactive SaaS business analytics
+- Explicit causal DAG specification
+- DoWhy causal identification and refutation
+- EconML Double Machine Learning
+- Synthetic ground-truth benchmarking
+- Interactive policy intervention simulator
+- Monte Carlo-based financial and churn risk analysis
+- LLM-powered executive decision memos
+- Separation of quantitative computation and AI-generated narratives
 
-Sensitivity analysis for unobserved confounding
+# 17. Author
 
-Automated experiment / A-B test design
-
-Bayesian decision modeling
-
-Multi-treatment optimization
-
-Automated scenario comparison
-
-Decision history tracking
-
-SQL / warehouse integration
-
-Real-time SaaS metrics integration
-
-Executive PDF report generation
-
-Authentication & role-based access
-
-Cloud deployment
-
-📌 Project Highlights
-
-End-to-end Causal Decision Intelligence platform
-
-Interactive Streamlit application
-
-DoWhy causal modeling & validation
-
-EconML Double Machine Learning
-
-Explicit causal DAGs
-
-5,000-draw Monte Carlo simulation
-
-Financial impact & churn risk distributions
-
-Percentile-based decision analysis
-
-Groq API + Llama 3.3 70B integration
-
-Automated executive strategy narratives
-
-👨‍💻 Author
-
-Saurav Khyalia
+**Saurav Khyalia**
 
 B.Tech — Electronics & Communication Engineering
 
-Interested in:
+Areas of Interest:
+- Data Analytics & Business Intelligence
+- Causal Inference & Decision Science
+- Applied Machine Learning
+- Generative AI
+- AI-powered Business Applications
 
-Data Analytics
+**GitHub:** https://github.com/Git-Saurav-Khyalia
 
-Business Intelligence
+---
 
-Causal Inference
+If you find this project interesting, feel free to explore the repository and examine how business analytics, causal inference, probabilistic simulation and Generative AI can be connected into a single decision-support workflow.
 
-Decision Science
-
-Machine Learning
-
-AI-powered Analytics
-
-⭐ If you found this project interesting
-
-Feel free to explore the repository, experiment with the decision simulator, and examine how observational analytics can be connected with causal inference and probabilistic decision-making.
+**Repository:** https://github.com/Git-Saurav-Khyalia/strategic-copilot
